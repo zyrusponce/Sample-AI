@@ -52,7 +52,7 @@ public class AI {
 
             // check for quota/limit error
             if (response.statusCode() == 429 || response.body().contains("quota") || response.body().contains("limit")) {
-                System.out.println("\n⚠️ JavAI RESPONSE: You have reached the usage limit. Try again after reset.");
+                System.out.println("\nJavAI RESPONSE: You have reached the usage limit. Try again after reset.");
             } else {
                 String aiText = extractText(response.body());
                 System.out.print("\nJavAI RESPONSE: ");

@@ -16,7 +16,7 @@ public class Logger {
             writer.write("User: " + prompt + "\n");
             writer.write("AI: " + response + "\n\n");
         } catch (IOException e) {
-            System.out.println("⚠️ Could not write to log file: " + e.getMessage());
+            System.out.println("Could not write to log file: " + e.getMessage());
         }
     }
 }
